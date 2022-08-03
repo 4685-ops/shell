@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 123456
+    url: jdbc:mysql://127.0.0.1/shell?characterEncoding=utf-8&useSSL=false
+    username: root
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+server:
+  servlet:
+    context-path: /shop
+logging:
+  pattern:
+    console: "%d - %msg%n"
+  file:
+    path: D:/tmp/shop
+wechat:
+  # 公众账号, 授权
+  mpAppId: wx841939c6f4b1d43b
+  mpAppSecret: 2cbaab2b6606406989611c117814d5ae
+
+  # 支付/商户号
+  mchId: 1483469312
+  mchKey: 06C56A89949D617xxxxxxxxxxx
+
+projectUrl:
+  wechatMpAuthorize: https://16v77976x4.goho.co
+  wechatOpenAuthorize: https://16v77976x4.goho.co
+  shop: https://16v77976x4.goho.co
